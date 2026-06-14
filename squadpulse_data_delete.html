@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SquadPulse - Account Deletion Request</title>
+    <style>
+        :root {
+            --primary-color: #1E293B; /* Slate dark background */
+            --accent-color: #DC2626;  /* Crimson/Red for deletion actions */
+            --text-color: #334155;
+            --bg-color: #F8FAFC;
+            --card-bg: #FFFFFF;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            border-bottom: 2px solid #E2E8F0;
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+
+        ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 25px;
+            font-size: 1.05rem;
+        }
+
+        .screenshot-placeholder {
+            background-color: #F1F5F9;
+            border: 2px dashed #CBD5E1;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 12px;
+            color: #64748B;
+            font-size: 0.9rem;
+        }
+
+        .screenshot-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--primary-color);
+        }
+
+        input[type="email"], input[type="text"], textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #CBD5E1;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 1rem;
+            background-color: #FFF;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(30, 41, 59, 0.1);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s ease;
+            width: 100%;
+        }
+
+        .btn:hover {
+            background-color: #B91C1C;
+        }
+
+        .info-note {
+            background-color: #FEF2F2;
+            border-left: 4px solid var(--accent-color);
+            padding: 15px;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            color: #991B1B;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #94A3B8;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>SquadPulse</h1>
+            <p>Account & Data Deletion Hub</p>
+        </div>
+
+        <div class="card">
+            <h2>Delete Directly Inside the App (Instant)</h2>
+            <p>The fastest way to remove your data is directly inside the SquadPulse application. Follow these instructions:</p>
+            
+            <ol>
+                <li>
+                    Open SquadPulse and navigate to your <strong>User Profile</strong> screen.
+                </li>
+                <li>
+                    Tap the <strong>Profile Edit Icon</strong> located near your current profile card.
+                    <div class="screenshot-placeholder">
+                        <p>[ Screenshot Placeholder: Profile screen highlighting the Edit Icon ]</p>
+                        </div>
+                </li>
+                <li>
+                    Scroll completely to the <strong>bottom of the Edit Profile screen</strong> and tap the <strong>Delete Account</strong> option. Confirm the prompt to instantly delete your profile and historical records.
+                    <div class="screenshot-placeholder">
+                        <p>[ Screenshot Placeholder: Bottom of Edit Profile screen showing the Deletion button ]</p>
+                        </div>
+                </li>
+            </ol>
+        </div>
+
+        <div class="card">
+            <h2>Request Deletion Via Web</h2>
+            <p>If you have already uninstalled the app or cannot log in, use the form below to submit a deletion request. Our team will process your request within 7 business days.</p>
+            
+            <div class="info-note">
+                <strong>What data will be removed?</strong><br>
+                Proceeding will permanently delete your authentication login credentials, nickname registry, profile statistics (wins, streaks, levels), coin balances, and any historical match data associated with your Unique User ID (`uid`).
+            </div>
+
+            <form action="mailto:your-support-email@example.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="email">Firebase Registered Email Address:</label>
+                    <input type="email" id="email" name="User Email" placeholder="example@gmail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="uid">Firebase Unique User ID (UID) - Optional:</label>
+                    <input type="text" id="uid" name="Firebase UID" placeholder="Found under profile settings or leave blank">
+                </div>
+
+                <div class="form-group">
+                    <label for="reason">Reason for leaving (Optional):</label>
+                    <textarea id="reason" name="Deletion Reason" rows="3" placeholder="Let us know how we can improve..."></textarea>
+                </div>
+
+                <button type="submit" class="btn">Submit Account Deletion Request</button>
+            </form>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 SquadPulse App Team. All rights reserved.
+        </div>
+    </div>
+
+</body>
+</html>
