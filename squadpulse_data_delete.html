@@ -83,6 +83,8 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
 
+        .screenshot {
+     
         .form-group {
             margin-bottom: 20px;
         }
@@ -128,6 +130,16 @@
             background-color: #B91C1C;
         }
 
+            .screenshot {
+                width: 100%;
+                max-width: 320px;       /* 🟩 Forces the image to stay exactly mobile-phone sized */
+                height: auto;           /* Keeps the aspect ratio perfect so it doesn't stretch */
+                display: block;
+                margin: 15px auto 0 auto; /* Centers the phone screenshot horizontally */
+                border-radius: 16px;    /* Optional: Gives it nice rounded corners like a real phone */
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Optional: Adds a soft phone drop-shadow */
+                border: 1px solid #E2E8F0; /* Optional: Adds a subtle device border edge */
+            }
         .info-note {
             background-color: #FEF2F2;
             border-left: 4px solid var(--accent-color);
@@ -154,7 +166,7 @@
             <p>Account & Data Deletion Hub</p>
         </div>
 
-        <div class="card">
+        <!-- <div class="card">
             <h2>Delete Directly Inside the App (Instant)</h2>
             <p>The fastest way to remove your data is directly inside the SquadPulse application. Follow these instructions:</p>
             
@@ -177,7 +189,26 @@
                         </div>
                 </li>
             </ol>
-        </div>
+        </div> -->
+
+        <div class="card">
+    <h2>Delete Directly Inside the App (Instant)</h2>
+    <p>The fastest way to remove your data is directly inside the SquadPulse application. Follow these instructions:</p>
+    
+    <ol>
+        <li>
+            Open SquadPulse and navigate to your <strong>User Profile</strong> screen.
+        </li>
+        <li>
+            Tap the <strong>Profile Edit Icon</strong> located near your current profile card.
+            <img src="app_user_profile.png" alt="SquadPulse Account Edit Profile Location" class="screenshot">
+        </li>
+        <li>
+            Scroll completely to the <strong>bottom of the Edit Profile screen</strong> and tap the <strong>Delete Account</strong> option. Confirm the prompt to instantly delete your profile and historical records.
+            <img src="app_user_profile_edit.png" alt="SquadPulse Account Deletion Settings" class="screenshot">
+        </li>
+    </ol>
+</div>
 
         <div class="card">
             <h2>Request Deletion Via Web</h2>
